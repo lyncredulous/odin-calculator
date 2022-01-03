@@ -54,7 +54,7 @@ Imports
 .screen p {
   width: auto;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 3rem;
+  font-size: clamp(1rem, 5vw, 3rem);
   text-align: right;
   color: white;
 }
