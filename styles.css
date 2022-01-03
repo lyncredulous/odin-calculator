@@ -17,7 +17,7 @@ Imports
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   max-height: 100%;
   max-width: 100%;
@@ -28,6 +28,7 @@ Imports
   grid-template-rows: [screen] 20% [numpad] 1fr;
   grid-gap: 1rem;
   aspect-ratio: 3/4;
+  max-width: 35rem; 
   width: 60vw;
   background-color: deepskyblue;
   padding: 2rem;
@@ -81,7 +82,7 @@ Imports
     border-radius: 1rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: white;
-    font-size: 5vw;
+    font-size: clamp(1rem, 5vw, 3rem);
     user-select:none;
 }
 
