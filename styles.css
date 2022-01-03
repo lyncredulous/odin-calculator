@@ -1,5 +1,6 @@
 /*********************************************************
 INDEX
+Imports
 .container
 .calculator
 .screen
@@ -9,6 +10,8 @@ INDEX
 .operators
 .operator
 **********************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 .container {
   display: flex;
@@ -34,12 +37,25 @@ INDEX
 }
 
 .screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
   background-color: darkslategrey;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 6px 0px inset,
     rgba(0, 0, 0, 0.2) -3px -3px 6px 1px inset;
   border-radius: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.screen p {
+  width: auto;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 3rem;
+  text-align: right;
+  color: white;
 }
 
 .numpad {
